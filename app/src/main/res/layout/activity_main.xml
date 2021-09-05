@@ -22,8 +22,17 @@
         android:id="@+id/containerScanner"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linkID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flashToggle"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashToggle" />
+
+    <TextView
+        android:id="@+id/linkID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="link :"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

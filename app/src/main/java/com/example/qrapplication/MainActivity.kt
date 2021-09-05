@@ -90,7 +90,9 @@ class MainActivity : AppCompatActivity(), ZBarScannerView.ResultHandler {
     {
 
         Toast.makeText(this!!,rawResult?.contents, Toast.LENGTH_LONG).show()
+        binding.linkID.text="link : $rawResult?.contents"
         scannerView.resumeCameraPreview(this)
+
 
     }
 
