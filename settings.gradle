@@ -1,0 +1,2 @@
+rootProject.name = "QRApplication"
+include ':app'
